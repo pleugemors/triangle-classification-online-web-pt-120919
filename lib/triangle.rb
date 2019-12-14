@@ -16,6 +16,7 @@ class Triangle
       @kind = :isosceles
     else 
       if
+    end
       @kind = :scalene
     end
   end
