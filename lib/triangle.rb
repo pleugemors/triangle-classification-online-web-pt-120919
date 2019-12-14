@@ -15,8 +15,13 @@ class Triangle
     elsif side2 == side3 || side1 == side3 || side1==side2
       @kind = :isosceles
     else 
+      if
       @kind = :scalene
     end
+  end
+  
+  class TriangleError < StandardError
+    
   end
   
 end
