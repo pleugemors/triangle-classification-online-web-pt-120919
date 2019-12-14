@@ -16,6 +16,8 @@ class Triangle
       @kind = :isosceles
     else 
       puts side1
+      puts side2
+      puts side3
       if side1 == 0  
         raise TriangleError
       else
