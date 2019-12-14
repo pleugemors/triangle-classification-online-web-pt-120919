@@ -17,7 +17,7 @@ class Triangle
       @kind = :isosceles
     else 
       puts side1
-      if !side1   
+      if side1 == 0   
         raise TriangleError
       else
         @kind = :scalene
