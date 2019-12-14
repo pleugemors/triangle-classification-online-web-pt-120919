@@ -18,7 +18,9 @@ class Triangle
     else 
       puts side1
       if side1 == 0   
-        raise TriangleError
+        begin 
+          raise TriangleError
+        end
       else
         @kind = :scalene
       end
