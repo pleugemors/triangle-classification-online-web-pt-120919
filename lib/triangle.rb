@@ -10,6 +10,9 @@ class Triangle
   end
   
   def type 
+    if side1 == 0 
+      raise TriangleError
+    end
     if side1 == side2 && side1 == side3 && side1 != 0
       @kind = :equilateral
     elsif side2 == side3 || side1 == side3 || side1==side2
