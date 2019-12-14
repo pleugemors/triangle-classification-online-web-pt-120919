@@ -16,8 +16,10 @@ class Triangle
       @kind = :isosceles
     else 
       if side1 == 0 || side2 = 0 || side3 == 0 
-        
-      @kind = :scalene
+        raise TriangleError
+      else
+        @kind = :scalene
+      end
     end
   end
   
